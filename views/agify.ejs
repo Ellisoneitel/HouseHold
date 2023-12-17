@@ -1,0 +1,29 @@
+<div class="SpacingBox">
+    <form id="agifyForm" action="/agifyGuess" method="get">
+        <h2>Enter a name and your age will be guessed</h2>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+
+        <div id="Guess"></div>
+    </form>
+    <div class="sidebyside">
+        <form action="/" method="get">
+            <button type="submit">Back</button>
+        </form>
+        <button onclick="fetchAndDisplayHistory()">History</button>
+        <button onclick="clearAgifyHistory()"> Clear History</button>
+        <button type="submit" form="agifyForm">Guess Age</button>
+
+    </div>
+
+    <div class="HistoryTable" id="HistoryTable"></div>
+
+
+
+        <script>
+            (function() {
+                handleAgifyFormSubmission();
+            })();
+        </script>
+
+</div>

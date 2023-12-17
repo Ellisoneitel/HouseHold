@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HouseHold</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="header-container">
+        <!-- Title -->
+        <h1>HouseHold</h1>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+            <!-- Menu Options -->
+        <div class="menu-options">
+            <a href="/Account">Account</a>
+            <a href="/agify">Agify</a>
+            <!--<a href="/Tasks">Tasks</a>-->
+           <!-- <a href="/HouseHold">HouseHold</a>-->
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+
+    <%- include(body, locals) %>
+
+    <br>
+    <div id="errorMessage" class="error-message"></div>
+
+
+    <% if (error) { %>
+        <script>
+            showError('<%- error %>'); // Display the error message
+        </script>
+    <% } %>
+    
+
+
+</body>
+
+</html>

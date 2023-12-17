@@ -1,0 +1,125 @@
+html {
+    background-color: rgb(43, 43, 43);
+    color: cyan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 auto;
+    display: flex;
+    font-size: 50px;
+
+}
+.sidebyside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    background-color: cyan;
+    color: rgb(43, 43, 43);
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 10px; 
+    padding: 15px 32px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Hamburger Icon */
+.hamburger-menu {
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    position: relative;
+}
+
+input {
+    border: 1px solid cyan;
+    border-radius: 5px; /* Slightly rounded corners for inputs */
+    margin: 10px 0; /* Spacing above and below */
+    padding: 10px;
+    background-color: transparent;
+    color: cyan;
+}
+
+.SpacingBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+    text-align: center;
+    padding: 10px;
+}
+
+.borderBox {
+    border: 2px solid cyan;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.bar {
+    display: block;
+    border-radius: 10px;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: cyan;
+    transition: 0.4s;
+}
+
+
+/* Menu Options */
+.menu-options {
+    display: none;
+    background-color: rgb(43, 43, 43);
+    border: 1px solid cyan;
+    border-radius: 10px;
+    z-index: 1;
+    top: 95px;
+    position: absolute;
+    right: 20px; /* Align to the right of the hamburger menu */
+}
+
+.menu-options a {
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+    color: cyan;
+}
+
+.menu-options a:hover {
+    background-color: cyan;
+    color: rgb(43, 43, 43);
+    border: 1px solid cyan;
+    border-radius: 10px;
+}
+
+
+.error-message {
+    color: yellow;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 10px;
+    /* additional styling */
+}
+
+table {
+    grid-column: auto;
+    margin-top: 30px;
+}
